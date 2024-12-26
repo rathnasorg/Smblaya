@@ -1,0 +1,39 @@
+[versions]
+agp = "8.7.3"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+#m3ExoPlayer = "1.5.1"
+exoPlayer = "2.19.1"
+lombok = "1.18.34"
+slf4j = "2.0.16"
+slf4jAndroid = "1.7.36"
+androidxSecurity = "1.1.0-alpha06"
+jcifsNg = "2.1.10"
+libVlc="3.5.1"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+#m3ExoPlayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "m3ExoPlayer" }
+#m3ExoUi = { group = "androidx.media3", name = "media3-ui", version.ref = "m3ExoPlayer" }
+#exoPlayer = { group = "com.google.android.exoplayer", name = "exoplayer", version.ref = "exoPlayer" }
+
+androidx-security = { group = "androidx.security", name = "security-crypto", version.ref = "androidxSecurity" }
+libVlc = { group = "org.videolan.android", name = "libvlc-all", version.ref = "libVlc" }
+jcifs-ng = { group = "eu.agno3.jcifs", name = "jcifs-ng", version.ref = "jcifsNg" }
+
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" }
+slf4j-api = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+slf4j-android = { group = "org.slf4j", name = "slf4j-android", version.ref = "slf4jAndroid" }
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
